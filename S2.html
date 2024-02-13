@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-extras@7.2.0/dist/aframe-extras.min.js"></script>
+
+  </head>
+  <body>
+    <a-scene xr-mode-ui="XRMode: xr">
+      <a-box position="-0.5 0.5 -1.5" rotation="0 45 0" color="#4CC3D9"
+          depth="0.5" height="0.5" width="0.5"></a-box>
+      <a-sphere position="0 2 -1.5" radius="0.25" color="#f1f81a"></a-sphere>
+      <a-sphere position="0 4 -1.5" radius="0.25" color="#1af8e7"></a-sphere>
+      <a-sphere position="0 6 -1.5" radius="0.25" color="#6512ee"></a-sphere>
+      <a-sphere position="0 8 -1.5" radius="0.25" color="#000000"></a-sphere>
+      <a-sphere position="0 10 -1.5" radius="0.25" color="#EF2D5E"></a-sphere>
+      <a-sphere position="0 -2 -1.5" radius="0.25" color="#36ff1b"></a-sphere>
+      <a-sphere position="0 -4 -1.5" radius="0.25" color="#ff1188"></a-sphere>
+      <a-sphere position="0 -6 -1.5" radius="0.25" color="#d34e07"></a-sphere>
+
+      <a-cylinder position="0.5 0.25 -1.5" radius="0.25" height="0.5" color="#FFC65D"></a-cylinder>
+      <a-plane position="0 0 -2" rotation="-90 0 0" width="2" height="2" color="#7BC8A4"></a-plane>
+      <a-sky hide-on-enter-ar color="#ECECEC"></a-sky>
+      <a-entity movement-controls="fly: true">
+        <a-entity camera look-controls wasd-controls position="0 1.6 0"></a-entity>
+    </a-entity>
+    </a-scene>
+  </body>
+</html>
